@@ -1,27 +1,22 @@
 package com.example.gameaggregator;
 
-public class Category<T> {
-    private CategoryType type;
-    private T value;
+import java.util.HashMap;
+import java.util.Map;
 
-    public Category(CategoryType type, T value) {
-        this.type = type;
-        this.value = value;
+public class Category {
+    private Map<String, Object> categoryMap;
+    public Category(Map<String, Object> categoryMap) {
+        this.categoryMap = categoryMap;
     }
-
-    public T getValue() {
-        return value;
-    }
-
-    public void setValue(T value) {
-        this.value = value;
-    }
-
-    public CategoryType getType() {
-        return type;
-    }
-
-    public void setType(CategoryType type) {
-        this.type = type;
-    }
+    /**
+    EVENT,
+    AGE,
+    GAME_TYPE {
+     ONLINE,
+     Offline
+     }
+    PERSONS_COUNT,
+    DIFFICULTY,
+    TIME
+     **/
 }

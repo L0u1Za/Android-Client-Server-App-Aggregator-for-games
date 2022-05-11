@@ -1,0 +1,22 @@
+[
+  {
+    "CATEGORIES" : {
+      "AGE" : 18,
+      "DIFFICULTY" : null,
+      "EVENT" : "Party",
+      "GAME_TYPE" : {
+        "OFFLINE" : null,
+        "ONLINE" : null
+      },
+      "PERSONS_COUNT" : null,
+      "TIME" : [
+        10,
+        20
+      ]
+    },
+    "DESC" : "Play online or over local WiFi with 4-15 players as you attempt to prep your spaceship for departure, but beware as one will be an impostor bent on killing everyone! Crewmates can win by completing all tasks or discovering and voting the impostor off the ship. The Impostor can use sabotage to cause chaos, making for easier kills and better alibis.",
+    "ID" : 1,
+    "NAME" : "Among Us",
+    "URL" : "https://play.google.com/store/apps/details?id=com.innersloth.spacemafia&hl=ru&gl=US"
+  }
+]

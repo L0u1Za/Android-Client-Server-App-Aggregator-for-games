@@ -6,22 +6,26 @@ public class Game {
     private String name;
     private String url;
     private String description;
-    private List<Category> categoryList;
+    private Category category;
     private boolean isFavourite;
-    public Game(String name, String description) {
+    private int id;
+    public Game(int id, String name, String description) {
+        this.id = id;
         this.name = name;
         this.description = description;
     }
-    public Game(String name, String description, String url) {
+    public Game(int id, String name, String description, String url) {
+        this.id = id;
         this.name = name;
         this.description = description;
         this.url = url;
     }
-    public Game(String name, String description, String url, List<Category> categoryList) {
+    public Game(int id, String name, String description, String url, Category categoryList) {
+        this.id = id;
         this.name = name;
         this.description = description;
         this.url = url;
-        this.categoryList = categoryList;
+        this.category = categoryList;
     }
 
     public String getName() {
@@ -48,12 +52,12 @@ public class Game {
         this.description = description;
     }
 
-    public List<Category> getCategoryList() {
-        return categoryList;
+    public Category getCategoryList() {
+        return category;
     }
 
-    public void setCategoryList(List<Category> categoryList) {
-        this.categoryList = categoryList;
+    public void setCategoryList(Category categoryList) {
+        this.category = categoryList;
     }
 
     public boolean getIsFavourite() {
@@ -62,5 +66,13 @@ public class Game {
 
     public void setIsFavourite(boolean favourite) {
         isFavourite = favourite;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
