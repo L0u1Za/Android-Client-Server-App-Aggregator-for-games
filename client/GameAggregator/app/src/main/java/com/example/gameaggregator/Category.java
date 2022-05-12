@@ -8,6 +8,14 @@ public class Category {
     public Category(Map<String, Object> categoryMap) {
         this.categoryMap = categoryMap;
     }
+
+    public Map<String, Object> getCategoryMap() {
+        return categoryMap;
+    }
+
+    public void setCategoryMap(Map<String, Object> categoryMap) {
+        this.categoryMap = categoryMap;
+    }
     /**
     EVENT,
     AGE,

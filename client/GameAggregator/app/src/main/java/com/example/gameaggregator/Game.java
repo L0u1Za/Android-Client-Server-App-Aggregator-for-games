@@ -7,7 +7,6 @@ public class Game {
     private String url;
     private String description;
     private Category category;
-    private boolean isFavourite;
     private int id;
     public Game(int id, String name, String description) {
         this.id = id;
@@ -58,14 +57,6 @@ public class Game {
 
     public void setCategoryList(Category categoryList) {
         this.category = categoryList;
-    }
-
-    public boolean getIsFavourite() {
-        return isFavourite;
-    }
-
-    public void setIsFavourite(boolean favourite) {
-        isFavourite = favourite;
     }
 
     public int getId() {

@@ -18,6 +18,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class GamesLoader {
@@ -53,8 +54,8 @@ public class GamesLoader {
                 .lines().collect(Collectors.joining("\n"));
         return result;
     }
-    static public void load(InputStream inputStream, List<Game> gameList) {
-        gameList.clear();
+    static public void load(InputStream inputStream) {
+        Data.GAMES.clear();
         try {
             String jsonString = read(inputStream);
             JSONArray arr = new JSONArray(jsonString);
@@ -68,7 +69,7 @@ public class GamesLoader {
                     JSONObject categories = gameData.getJSONObject("CATEGORIES");
                     Category category = new Category(toMap(categories));
                     Game game = new Game(id, name, desc, url, category);
-                    gameList.add(game);
+                    Data.GAMES.add(game);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -91,5 +92,22 @@ public class GamesLoader {
             }
         });
          **/
+    }
+    public static void loadFavourite(InputStream inputStream) {
+        Data.FAVOURITE_GAMES_IDS.clear();
+        Data.FAVOURITE_GAMES.clear();
+        try {
+            String jsonString = read(inputStream);
+            JSONArray jsonArray = new JSONArray(jsonString);
+            List<Object> list = toList(jsonArray);
+            list.forEach(x->Data.FAVOURITE_GAMES_IDS.add((Integer)x));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        for (Game game : Data.GAMES) {
+            if (Data.FAVOURITE_GAMES_IDS.contains(game.getId())) {
+                Data.FAVOURITE_GAMES.add(game);
+            }
+        }
     }
 }
