@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GameAggregator">
         <activity
+            android:name=".ChooseTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChooseAgeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChooseEventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FilteredGamesActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

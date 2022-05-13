@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseAgeActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="323dp"
+        android:layout_height="677dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/slogan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Возрастные ограничения"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="13dp"
+            android:text="back" />
+
+        <Button
+            android:id="@+id/forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="13dp"
+            android:text="forward" />
+
+        <Button
+            android:id="@+id/online"
+            android:layout_width="215dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="81dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="537dp"
+            android:text="0+" />
+
+        <Button
+            android:id="@+id/six"
+            android:layout_width="215dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="158dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="460dp"
+            android:text="6+" />
+
+        <Button
+            android:id="@+id/twelve"
+            android:layout_width="215dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="231dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="387dp"
+            android:text="12+" />
+
+        <Button
+            android:id="@+id/sixteen"
+            android:layout_width="215dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="303dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="315dp"
+            android:text="16+" />
+
+        <Button
+            android:id="@+id/offline"
+            android:layout_width="215dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="373dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="245dp"
+            android:text="18+" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
