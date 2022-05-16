@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "63752105344",
+    "project_id": "android-client-server-app",
+    "storage_bucket": "android-client-server-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63752105344:android:539b359fd9984009f3e565",
+        "android_client_info": {
+          "package_name": "com.example.gameaggregator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63752105344-gj32vot7bd4ir5u12vjt3qtmtrrbpa3q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJMCo2XLPRKLqvTjR6M5uFmCUHKNfQP4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63752105344-gj32vot7bd4ir5u12vjt3qtmtrrbpa3q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

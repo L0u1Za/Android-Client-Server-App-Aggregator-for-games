@@ -1,7 +1,5 @@
 package com.example.gameaggregator;
 
-import java.util.List;
-
 public class Game {
     private String name;
     private String url;
