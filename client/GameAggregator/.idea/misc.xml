@@ -3,10 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/User/Android-Client-Server-App-Aggregator-for-games/client/GameAggregator/app/src/main/res/layout/activity_choose_age.xml" value="0.2" />
-        <entry key="..\:/Users/User/Android-Client-Server-App-Aggregator-for-games/client/GameAggregator/app/src/main/res/layout/activity_choose_event.xml" value="0.2" />
+        <entry key="..\:/Users/User/Android-Client-Server-App-Aggregator-for-games/client/GameAggregator/app/src/main/res/layout/activity_choose_age.xml" value="0.25" />
+        <entry key="..\:/Users/User/Android-Client-Server-App-Aggregator-for-games/client/GameAggregator/app/src/main/res/layout/activity_choose_event.xml" value="0.264" />
         <entry key="..\:/Users/User/Android-Client-Server-App-Aggregator-for-games/client/GameAggregator/app/src/main/res/layout/activity_choose_type.xml" value="0.2" />
-        <entry key="..\:/Users/User/Android-Client-Server-App-Aggregator-for-games/client/GameAggregator/app/src/main/res/layout/activity_filtered_games.xml" value="0.16" />
+        <entry key="..\:/Users/User/Android-Client-Server-App-Aggregator-for-games/client/GameAggregator/app/src/main/res/layout/activity_filtered_games.xml" value="0.2" />
         <entry key="..\:/Users/User/Android-Client-Server-App-Aggregator-for-games/client/GameAggregator/app/src/main/res/layout/activity_main.xml" value="0.264" />
       </map>
     </option>

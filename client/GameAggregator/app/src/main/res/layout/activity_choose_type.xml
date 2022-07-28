@@ -12,7 +12,6 @@
         android:layout_height="677dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -25,6 +24,26 @@
             android:text="Выберите тип игры"
             android:textSize="25sp"
             android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="538dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="70dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/online"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="online" />
+
+            <CheckBox
+                android:id="@+id/offline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="offline" />
+        </LinearLayout>
 
         <Button
             android:id="@+id/back"
@@ -42,34 +61,6 @@
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="13dp"
             android:text="forward" />
-
-        <Button
-            android:id="@+id/online"
-            android:layout_width="215dp"
-            android:layout_height="60dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="56dp"
-            android:layout_marginTop="81dp"
-            android:layout_marginEnd="52dp"
-            android:layout_marginBottom="537dp"
-            android:text="Онлайн" />
-
-        <Button
-            android:id="@+id/offline"
-            android:layout_width="215dp"
-            android:layout_height="60dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="56dp"
-            android:layout_marginTop="153dp"
-            android:layout_marginEnd="52dp"
-            android:layout_marginBottom="465dp"
-            android:text="Оффлайн" />
 
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

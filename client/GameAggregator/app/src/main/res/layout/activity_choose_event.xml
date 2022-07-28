@@ -12,9 +12,52 @@
         android:layout_height="677dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="536dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="74dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/party"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Для вечеринки" />
+
+            <CheckBox
+                android:id="@+id/family"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Для всей семьи" />
+
+            <CheckBox
+                android:id="@+id/alone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Для одного" />
+
+            <CheckBox
+                android:id="@+id/road"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="В дорогу" />
+
+            <CheckBox
+                android:id="@+id/child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ребенку" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/slogan"
@@ -42,76 +85,6 @@
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="13dp"
             android:text="forward" />
-
-        <Button
-            android:id="@+id/online"
-            android:layout_width="215dp"
-            android:layout_height="60dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="56dp"
-            android:layout_marginTop="81dp"
-            android:layout_marginEnd="52dp"
-            android:layout_marginBottom="537dp"
-            android:text="Для вечеринки" />
-
-        <Button
-            android:id="@+id/six"
-            android:layout_width="215dp"
-            android:layout_height="60dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="56dp"
-            android:layout_marginTop="371dp"
-            android:layout_marginEnd="52dp"
-            android:layout_marginBottom="247dp"
-            android:text="Ребенку" />
-
-        <Button
-            android:id="@+id/twelve"
-            android:layout_width="215dp"
-            android:layout_height="60dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="56dp"
-            android:layout_marginTop="297dp"
-            android:layout_marginEnd="52dp"
-            android:layout_marginBottom="321dp"
-            android:text="В дорогу" />
-
-        <Button
-            android:id="@+id/sixteen"
-            android:layout_width="215dp"
-            android:layout_height="60dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="56dp"
-            android:layout_marginTop="225dp"
-            android:layout_marginEnd="52dp"
-            android:layout_marginBottom="393dp"
-            android:text="Для одного" />
-
-        <Button
-            android:id="@+id/offline"
-            android:layout_width="215dp"
-            android:layout_height="60dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="56dp"
-            android:layout_marginTop="153dp"
-            android:layout_marginEnd="52dp"
-            android:layout_marginBottom="465dp"
-            android:text="Для всей семьи" />
 
     </RelativeLayout>
 
