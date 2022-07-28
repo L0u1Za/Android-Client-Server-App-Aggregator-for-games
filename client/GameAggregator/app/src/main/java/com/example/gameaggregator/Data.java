@@ -11,5 +11,6 @@ public class Data {
     static public List<Game> GAMES = new ArrayList<Game>();
     static public List<Game> FAVOURITE_GAMES = new ArrayList<Game>();
     static public Set<Integer> FAVOURITE_GAMES_IDS = new HashSet<>();
+    static public Category CURRENT_CATEGORY = new Category();
     //static public FirebaseFirestore db = FirebaseFirestore.getInstance();
 }
