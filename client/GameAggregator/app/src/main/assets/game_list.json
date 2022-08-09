@@ -3,10 +3,10 @@
     "CATEGORIES" : {
       "AGE" : 18,
       "DIFFICULTY" : null,
-      "EVENT" : "Party",
+      "EVENT" : ["party"],
       "GAME_TYPE" : {
         "OFFLINE" : null,
-        "ONLINE" : null
+        "ONLINE" : ["android"]
       },
       "PERSONS_COUNT" : null,
       "TIME" : [

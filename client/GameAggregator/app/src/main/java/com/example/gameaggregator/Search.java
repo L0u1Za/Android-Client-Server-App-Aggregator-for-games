@@ -22,6 +22,7 @@ public class Search {
             Map<String, Object> currentGameCategory = game.getCategoryList().getCategoryMap();
             boolean ok = true;
             for (Map.Entry<String, Object> cat : categoryRequest.getCategoryMap().entrySet()) {
+                boolean curOk = false;
                 if (cat.getValue() != null) {
                     Object curValueObj = currentGameCategory.get(cat.getKey());
                     if (curValueObj == null) {
@@ -29,33 +30,36 @@ public class Search {
                         break;
                     }
                     if (cat.getKey().equals("EVENT")) {
-                        List<String> values = (List<String>)cat.getValue();
-                        List<String> curValue = (List<String>)curValueObj;
-                        for (String value : values) {
-                            if (!curValue.contains(value)) {
-                                ok = false;
+                        curValueObj = (List<String>)currentGameCategory.get(cat.getKey());
+                        List<String> curValues = (List<String>)cat.getValue();
+                        List<String> gameValues = (List<String>)curValueObj;
+                        for (String value : curValues) {
+                            if (gameValues.contains(value)) {
+                                curOk = true;
                                 break;
                             }
                         }
                     } else if (cat.getKey().equals("AGE")){
-                        Integer value = (Integer)cat.getValue();
-                        Integer curValue = (Integer)curValueObj;
-                        if (curValue < value) {
-                            ok = false;
-                            break;
+                        List<Integer> curValues = (List<Integer>)cat.getValue();
+                        Integer gameValue = (Integer)curValueObj;
+                        for (Integer curValue : curValues) {
+                            if (curValue >= gameValue) {
+                                curOk = true;
+                                break;
+                            }
                         }
                     } else if (cat.getKey().equals("GAME_TYPE")) {
-                        Map<String, Object> gameTypeMap = (Map<String, Object>)cat.getValue();
-                        Map<String, Object> curGameTypeMap = (Map<String, Object>)curValueObj;
-                        if (gameTypeMap.get("ONLINE") != null && curGameTypeMap.get("ONLINE") == null) {
-                            ok = false;
-                            break;
+                        Map<String, Object> curTypeMap = (Map<String, Object>)cat.getValue();
+                        Map<String, Object> gameTypeMap = (Map<String, Object>)curValueObj;
+                        if (curTypeMap.get("ONLINE") != null && gameTypeMap.get("ONLINE") == null) {
+                            curOk = false;
+                        } else if (curTypeMap.get("OFFLINE") != null && gameTypeMap.get("OFFLINE") == null) {
+                            curOk = false;
+                        } else {
+                            curOk = true;
                         }
-
-                        if (gameTypeMap.get("OFFLINE") != null && curGameTypeMap.get("OFFLINE") == null) {
-                            ok = false;
-                            break;
-                        }
+                    } else {
+                        curOk = true;
                     }
                     /**
                     else if (cat.getKey().equals("PERSONS_COUNT")) {
@@ -70,6 +74,7 @@ public class Search {
                     }
                      **/
                 }
+                ok &= curOk;
             }
             if (ok) {
                 result.add(game);

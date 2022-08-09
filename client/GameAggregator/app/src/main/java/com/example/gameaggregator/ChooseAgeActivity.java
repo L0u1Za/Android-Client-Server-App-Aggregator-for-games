@@ -38,21 +38,21 @@ public class ChooseAgeActivity extends AppCompatActivity {
         forwardButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ArrayList<String> lst = new ArrayList<String>();
+                ArrayList<Integer> lst = new ArrayList<Integer>();
                 if (isZero) {
-                    lst.add("zero");
+                    lst.add(0);
                 }
                 if (isSix) {
-                    lst.add("six");
+                    lst.add(6);
                 }
                 if (isTwelve) {
-                    lst.add("twelve");
+                    lst.add(12);
                 }
                 if (isSixteen) {
-                    lst.add("sixteen");
+                    lst.add(16);
                 }
                 if (isEighteen) {
-                    lst.add("eighteen");
+                    lst.add(18);
                 }
                 Data.CURRENT_CATEGORY.getCategoryMap().put("AGE", lst);
                 Log.d("AGE list", ((ArrayList<String>)Data.CURRENT_CATEGORY.getCategoryMap().get("AGE")).toString());

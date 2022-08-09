@@ -10,7 +10,7 @@ public class Category {
         this.categoryMap = new HashMap<String, Object> (){
             {
                 put("EVENT", new ArrayList<String>());
-                put("AGE", new ArrayList<String>());
+                put("AGE", new ArrayList<Integer>());
                 put("GAME_TYPE", new HashMap<String, Object> (){
                     {
                         put("ONLINE", new ArrayList<String>());
