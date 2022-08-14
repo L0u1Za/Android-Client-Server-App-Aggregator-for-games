@@ -1,4 +1,4 @@
-package com.example.gameaggregator;
+package com.example.gameaggregator.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+
+import com.example.gameaggregator.Data;
+import com.example.gameaggregator.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

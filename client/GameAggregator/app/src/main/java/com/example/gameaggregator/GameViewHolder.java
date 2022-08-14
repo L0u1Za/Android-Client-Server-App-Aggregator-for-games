@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.gameaggregator.R;
 
-public class GameViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener
+public class GameViewHolder extends RecyclerView.ViewHolder
 {
     public TextView gameName;
     public ItemClickListener listener;
@@ -20,7 +20,7 @@ public class GameViewHolder extends RecyclerView.ViewHolder implements View.OnCl
 
         gameName = itemView.findViewById(R.id.game_name);
     }
-
+    /**
     public void setItemClickListner(ItemClickListener listener)
     {
         this.listener = listener;
@@ -31,7 +31,9 @@ public class GameViewHolder extends RecyclerView.ViewHolder implements View.OnCl
     {
         listener.onClick(view, getAdapterPosition(), false);
     }
+    **/
     public void bind(Game game) {
         gameName.setText(game.getName());
     }
+
 }

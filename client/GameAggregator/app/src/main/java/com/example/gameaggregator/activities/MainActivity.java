@@ -1,12 +1,13 @@
-package com.example.gameaggregator;
+package com.example.gameaggregator.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Environment;
-import android.view.View;
-import android.widget.Button;
+
+import com.example.gameaggregator.Data;
+import com.example.gameaggregator.GamesLoader;
+import com.example.gameaggregator.R;
 
 import org.json.JSONArray;
 
