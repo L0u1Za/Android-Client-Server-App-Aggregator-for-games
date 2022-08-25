@@ -8,7 +8,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.gameaggregator.Data;
 import com.example.gameaggregator.Game;
@@ -23,6 +25,7 @@ import java.util.List;
 public class FilteredGamesActivity extends AppCompatActivity implements ItemClickListener {
     private List<Game> gameList;
     private RecyclerView recyclerView;
+    private Button homeButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +37,16 @@ public class FilteredGamesActivity extends AppCompatActivity implements ItemClic
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         GameAdapter adapter = new GameAdapter(this, gameList, this);
         recyclerView.setAdapter(adapter);
+
+        homeButton = findViewById(R.id.home);
+        homeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goHome = new Intent(FilteredGamesActivity.this, MainActivity.class);
+                //goHome.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                startActivity(goHome);
+            }
+        });
     }
     @Override
     public void onClick(int position) {
