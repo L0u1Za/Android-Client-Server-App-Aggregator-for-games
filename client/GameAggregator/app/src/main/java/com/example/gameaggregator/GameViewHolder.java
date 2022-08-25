@@ -8,30 +8,24 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.gameaggregator.R;
 
-public class GameViewHolder extends RecyclerView.ViewHolder
+public class GameViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener
 {
     public TextView gameName;
     public ItemClickListener listener;
 
-
-    public GameViewHolder(View itemView)
+    public GameViewHolder(View itemView, ItemClickListener listener)
     {
         super(itemView);
 
-        gameName = itemView.findViewById(R.id.game_name);
-    }
-    /**
-    public void setItemClickListner(ItemClickListener listener)
-    {
+        this.gameName = itemView.findViewById(R.id.game_name);
         this.listener = listener;
+        itemView.setOnClickListener(this);
     }
-
     @Override
     public void onClick(View view)
     {
-        listener.onClick(view, getAdapterPosition(), false);
+        listener.onClick(getAdapterPosition());
     }
-    **/
     public void bind(Game game) {
         gameName.setText(game.getName());
     }
