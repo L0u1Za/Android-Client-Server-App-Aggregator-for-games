@@ -23,8 +23,14 @@ public class GameDetailsActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_details);
 
+        Bundle data = getIntent().getExtras();
+        Game game = data.getParcelable("game");
+
         gameName = findViewById(R.id.game_name);
         gameDescription = findViewById(R.id.game_description);
+
+        gameName.setText(game.getName());
+        gameDescription.setText(game.getDescription());
 
         homeButton = findViewById(R.id.home);
     }

@@ -1,6 +1,9 @@
 package com.example.gameaggregator;
 
-public class Game {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Game implements Parcelable {
     private String name;
     private String url;
     private String description;
@@ -65,8 +68,38 @@ public class Game {
         this.id = id;
     }
 
+    public Game(Parcel source) {
+        name = source.readString();
+        url = source.readString();
+        description = source.readString();
+    }
+
     @Override
     public String toString() {
         return this.name;
     }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(name);
+        dest.writeString(url);
+        dest.writeString(description);
+    }
+
+    public static final Creator<Game> CREATOR = new Creator<Game>() {
+        @Override
+        public Game[] newArray(int size) {
+            return new Game[size];
+        }
+
+        @Override
+        public Game createFromParcel(Parcel source) {
+            return new Game(source);
+        }
+    };
 }

@@ -38,7 +38,7 @@ public class FilteredGamesActivity extends AppCompatActivity implements ItemClic
     @Override
     public void onClick(int position) {
         Intent intent = new Intent(FilteredGamesActivity.this, GameDetailsActivity.class);
-        //intent.putExtra("game", gameList.get(position));
+        intent.putExtra("game", gameList.get(position));
         startActivity(intent);
     }
 }
