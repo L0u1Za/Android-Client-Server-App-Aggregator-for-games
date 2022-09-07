@@ -51,6 +51,7 @@ public class ChooseTypeActivity extends AppCompatActivity {
                 });
                 //Log.d("ONLINE list", ((ArrayList<String>)Data.CURRENT_CATEGORY.getCategoryMap().get("GAME_TYPE").get("ONLINE")).toString());
                 Intent goNext = new Intent(ChooseTypeActivity.this, FilteredGamesActivity.class);
+                goNext.putExtra("searchType", "categories");
                 startActivity(goNext);
             }
         });

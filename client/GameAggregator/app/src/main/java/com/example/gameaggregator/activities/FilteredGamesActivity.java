@@ -30,8 +30,13 @@ public class FilteredGamesActivity extends AppCompatActivity implements ItemClic
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_filtered_games);
-
-        gameList = Search.find(Data.CURRENT_CATEGORY);
+        Bundle data = getIntent().getExtras();
+        String searchType = data.getString("searchType");
+        if (searchType.equals("categories")) {
+            gameList = Search.find(Data.CURRENT_CATEGORY);
+        } else if (searchType.equals("name")) {
+            gameList = Search.find("request");
+        }
         Log.d("gameList", gameList.toString());
         recyclerView = findViewById(R.id.games_list);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
