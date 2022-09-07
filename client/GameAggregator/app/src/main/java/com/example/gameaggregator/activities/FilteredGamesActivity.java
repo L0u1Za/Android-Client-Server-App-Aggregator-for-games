@@ -35,7 +35,8 @@ public class FilteredGamesActivity extends AppCompatActivity implements ItemClic
         if (searchType.equals("categories")) {
             gameList = Search.find(Data.CURRENT_CATEGORY);
         } else if (searchType.equals("name")) {
-            gameList = Search.find("request");
+            String request = data.getString("request");
+            gameList = Search.find(request);
         }
         Log.d("gameList", gameList.toString());
         recyclerView = findViewById(R.id.games_list);

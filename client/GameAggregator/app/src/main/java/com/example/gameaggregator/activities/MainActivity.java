@@ -102,8 +102,8 @@ public class MainActivity extends AppCompatActivity {
         searchNameButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent start = new Intent(MainActivity.this, ChooseEventActivity.class);
-                //startActivity(start);
+                Intent start = new Intent(MainActivity.this, SearchActivity.class);
+                startActivity(start);
             }
         });
         searchFilteredButton.setOnClickListener(new View.OnClickListener() {
