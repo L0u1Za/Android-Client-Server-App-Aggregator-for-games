@@ -40,7 +40,14 @@ public class ChooseEventActivity extends AppCompatActivity {
 
         forwardButton = (Button) findViewById(R.id.forward);
         backButton = (Button) findViewById(R.id.back);
-
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goBack = new Intent(ChooseEventActivity.this, MainActivity.class);
+                goBack.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                startActivity(goBack);
+            }
+        });
         forwardButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

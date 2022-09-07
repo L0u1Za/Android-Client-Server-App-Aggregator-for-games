@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.example.gameaggregator.Data;
 import com.example.gameaggregator.GamesLoader;
@@ -19,6 +21,8 @@ import java.io.IOException;
 import java.io.Writer;
 
 public class MainActivity extends AppCompatActivity {
+    private Button searchNameButton, searchFilteredButton;
+
     private void initializeDirectories() throws IOException {
         File dir = new File(getCacheDir(), "GameAggregator");
         boolean ok;
@@ -93,7 +97,22 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        Intent start = new Intent(MainActivity.this, ChooseEventActivity.class);
-        startActivity(start);
+        searchNameButton = (Button) findViewById(R.id.name_search);
+        searchFilteredButton = (Button) findViewById(R.id.filtered_search);
+        searchNameButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Intent start = new Intent(MainActivity.this, ChooseEventActivity.class);
+                //startActivity(start);
+            }
+        });
+        searchFilteredButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent start = new Intent(MainActivity.this, ChooseEventActivity.class);
+                startActivity(start);
+            }
+        });
+
     }
 }
