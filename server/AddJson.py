@@ -32,21 +32,23 @@ class AddApp:
 
 
 if __name__ == '__main__':
-    with open(path, 'r') as file:
+    with open(path, 'r', encoding='utf-8') as file:
         data = json.loads(file.read())
-    with open(path, 'w') as file:
+    with open(path, 'w', encoding='utf-8') as file:
         try:
             if (len(data) != 0 and 'ID' in data[-1]):
                 id = data[-1]['ID'] + 1
             else:
                 id = 1
             ctg = available_categories.copy()
-            ctg['EVENT'] = 'Party'
-            ctg['AGE'] = 18
-            ctg['TIME'] = (10, 20)
-            name = 'Among Us'
-            url = 'https://play.google.com/store/apps/details?id=com.innersloth.spacemafia&hl=ru&gl=US'
-            desc = 'Play online or over local WiFi with 4-15 players as you attempt to prep your spaceship for departure, but beware as one will be an impostor bent on killing everyone! Crewmates can win by completing all tasks or discovering and voting the impostor off the ship. The Impostor can use sabotage to cause chaos, making for easier kills and better alibis.'
+            ctg['EVENT'] = ['party']
+            ctg['AGE'] = 16
+            ctg['GAME_TYPE']['ONLINE']
+            ctg['GAME_TYPE']['OFFLINE'] = ['true']
+
+            name = f'Мафия. Город Засыпает'
+            url = f'https://www.ozon.ru/product/mafiya-gorod-zasypaet-148541805/?asb=QH7TCSegQcXVHbYHBJYM7LKhtdxwG%252BVRoAPCitoFqlhnpmUN%252FFssSI0vlK6XPITO&asb2=Xy3Lfwyj0JFNfKL63aHD310HF0Wg_EMUS2Yzk15F-oa12uWlDnOx2OdvI2HNr0ZmkJMsfm0OKKRsuVZYm4bXIosw843ahVEZrJt0l2JPF9ha6oDuKIyMRBscQAL7YmvjK9Ks6fnQ7Zbn3nVyMCVt4g&sh=rkEx2tHLPg'
+            desc = f'Универсальное решение для большой компании любителей нуарных детективов! Перед вами особый выпуск популярной психологической игры Мафия от издательства GaGa Games. Мрачные, но стильные иллюстрации зададут тон вашей партии, и правдоподобно сыграть доставшегося вам персонажа не составит труда. Ход игры неизменен: ночами преступники творят беспредел и стремятся сократить число мирных жителей до критически малого, днем законопослушные граждане пытаются навести в городе порядок своими силами и вычислить всех членов мафиозного клана. Опытный ведущий с бурной фантазией контролирует процесс, но в комплект не входит. Все роли скрыты, и чтобы узнать, кто есть кто, придется прислушаться к интуиции, прибегнуть к дедукции и теории лжи. Будьте внимательны к мелочам, активно отстаивайте свою точку зрения и получайте удовольствие от общения!'
             app = AddApp(name, url, desc, ctg, id)
             data.append(app.write())
         except:

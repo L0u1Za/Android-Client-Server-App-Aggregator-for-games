@@ -3,20 +3,343 @@
         "CATEGORIES" : {
             "AGE" : 18,
             "DIFFICULTY" : null,
-            "EVENT" : "Party",
+            "EVENT" : [
+                "party"
+            ],
             "GAME_TYPE" : {
                 "OFFLINE" : null,
-                "ONLINE" : null
+                "ONLINE" : [
+                    "android",
+                    "PC"
+                ]
             },
             "PERSONS_COUNT" : null,
-            "TIME" : [
-                10,
-                20
-            ]
+            "TIME" : null
         },
         "DESC" : "Play online or over local WiFi with 4-15 players as you attempt to prep your spaceship for departure, but beware as one will be an impostor bent on killing everyone! Crewmates can win by completing all tasks or discovering and voting the impostor off the ship. The Impostor can use sabotage to cause chaos, making for easier kills and better alibis.",
         "ID" : 1,
         "NAME" : "Among Us",
         "URL" : "https://play.google.com/store/apps/details?id=com.innersloth.spacemafia&hl=ru&gl=US"
+    },
+    {
+        "CATEGORIES" : {
+            "AGE" : 12,
+            "DIFFICULTY" : null,
+            "EVENT" : [
+                "party"
+            ],
+            "GAME_TYPE" : {
+                "OFFLINE" : null,
+                "ONLINE" : [
+                    "PC"
+                ]
+            },
+            "PERSONS_COUNT" : null,
+            "TIME" : null
+        },
+        "DESC" : "Five new games: the hit threequel Quiplash 3, the collaborative chaos of The Devils and the Details, the fierce drawing game ChampРїС—Р…d Up, the speech game Talking Points and the guessing game Blather Round. Use phones or tablets as controllers and play with up to 8 players, and an audience of 10,000!",
+        "ID" : 2,
+        "NAME" : "The Jackbox Party Pack 7",
+        "URL" : "https://store.steampowered.com/app/1211630/The_Jackbox_Party_Pack_7/?l=russian"
+    },
+    {
+        "CATEGORIES" : {
+            "AGE" : 12,
+            "DIFFICULTY" : null,
+            "EVENT" : [
+                "party"
+            ],
+            "GAME_TYPE" : {
+                "OFFLINE" : null,
+                "ONLINE" : [
+                    "PC"
+                ]
+            },
+            "PERSONS_COUNT" : null,
+            "TIME" : null
+        },
+        "DESC" : "The threequel to the party game phenomenon features the deadly quiz show Trivia Murder Party, the say-anything sequel Quiplash 2, the surprising survey game Guesspionage, the t-shirt slugfest Tee K.O., and the sneaky trickster game FakinРїС—Р… It.",
+        "ID" : 3,
+        "NAME" : "The Jackbox Party Pack 3",
+        "URL" : "https://store.steampowered.com/app/434170/The_Jackbox_Party_Pack_3/"
+    },
+    {
+        "CATEGORIES" : {
+            "AGE" : 12,
+            "DIFFICULTY" : null,
+            "EVENT" : [
+                "party"
+            ],
+            "GAME_TYPE" : {
+                "OFFLINE" : null,
+                "ONLINE" : [
+                    "PC"
+                ]
+            },
+            "PERSONS_COUNT" : null,
+            "TIME" : null
+        },
+        "DESC" : "ItРїС—Р…s the wildest Party Pack yet, with the absurd deathmatch Trivia Murder Party 2, the weird word circus Dictionarium, the hidden identity game Push The Button, the comedy contest Joke Boat and the offbeat personality test Role Models.",
+        "ID" : 4,
+        "NAME" : "The Jackbox Party Pack 6",
+        "URL" : "https://store.steampowered.com/app/1005300/The_Jackbox_Party_Pack_6/"
+    },
+    {
+        "CATEGORIES" : {
+            "AGE" : 12,
+            "DIFFICULTY" : null,
+            "EVENT" : [
+                "party"
+            ],
+            "GAME_TYPE" : {
+                "OFFLINE" : null,
+                "ONLINE" : [
+                    "PC"
+                ]
+            },
+            "PERSONS_COUNT" : null,
+            "TIME" : null
+        },
+        "DESC" : "Pummel Party – забава для вечеринок с участием 4-8 игроков и возможностью состязаться как по сети, так и локально. Побеждайте друзей или ИИ с помощью нелепых предметов в режиме настольной игры и соревнуйтесь с друзьями (которые могут легко превратиться во врагов) в уникальной подборке мини-игр.",
+        "ID" : 5,
+        "NAME" : "Pummel Party",
+        "URL" : "https://store.steampowered.com/app/880940/Pummel_Party/"
+    },
+    {
+        "CATEGORIES" : {
+            "AGE" : 12,
+            "DIFFICULTY" : null,
+            "EVENT" : [
+                "party",
+                "alone",
+                "road"
+            ],
+            "GAME_TYPE" : {
+                "OFFLINE" : null,
+                "ONLINE" : [
+                    "PC"
+                ]
+            },
+            "PERSONS_COUNT" : null,
+            "TIME" : null
+        },
+        "DESC" : "Рубите, режьте и разрушайте все, чтобы добиться победы в приключенческой двумерной аркаде-призере от компании The Behemoth!",
+        "ID" : 6,
+        "NAME" : "Castle Crashers",
+        "URL" : "https://store.steampowered.com/app/204360/Castle_Crashers/"
+    },
+    {
+        "CATEGORIES" : {
+            "AGE" : 6,
+            "DIFFICULTY" : null,
+            "EVENT" : [
+                "party"
+            ],
+            "GAME_TYPE" : {
+                "OFFLINE" : [
+                    "true"
+                ],
+                "ONLINE" : [
+                    "PC",
+                    "android"
+                ]
+            },
+            "PERSONS_COUNT" : null,
+            "TIME" : null
+        },
+        "DESC" : "Правда или Действие (или Truth or Dare) это одна из лучших настольных игр, которая превратит спонтанную встречу в захватывающее событие. Игра оживит даже самую скучную вечеринку и придаст веселья, интимности и задушевности встречам с друзьями. Это классическая игра для вечеринок и посиделок!",
+        "ID" : 7,
+        "NAME" : "Правда или Действие",
+        "URL" : "https://www.pravdailidejstvie.ru/%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%B8%D0%B3%D1%80%D1%8B/"
+    },
+    {
+        "CATEGORIES" : {
+            "AGE" : 6,
+            "DIFFICULTY" : null,
+            "EVENT" : [
+                "party"
+            ],
+            "GAME_TYPE" : {
+                "OFFLINE" : [
+                    "true"
+                ],
+                "ONLINE" : [
+                    "PC",
+                    "android",
+                    "ios"
+                ]
+            },
+            "PERSONS_COUNT" : null,
+            "TIME" : null
+        },
+        "DESC" : "За основу игры взяты Шляпа и Alias. Можно играть парами, можно командами. Объясняющий меняется каждый ход, за минуту необходимо объяснить как можно больше слов, каждое отгаданное слово даёт одно очко команде. В конце каждого раунда игроки вручную выставляют очки по каждому слову, так что правила засчитывания слов могут быть произвольными.",
+        "ID" : 8,
+        "NAME" : "Alias",
+        "URL" : "https://meme-police.ru/bg"
+    },
+    {
+        "CATEGORIES" : {
+            "AGE" : 6,
+            "DIFFICULTY" : null,
+            "EVENT" : [
+                "party"
+            ],
+            "GAME_TYPE" : {
+                "OFFLINE" : [
+                    "true"
+                ],
+                "ONLINE" : [
+                    "PC",
+                    "android",
+                    "ios"
+                ]
+            },
+            "PERSONS_COUNT" : null,
+            "TIME" : null
+        },
+        "DESC" : "Руководитель команды в свой ход даёт игрокам шифрованный намёк и указывает, сколько слов связаны с ним (далее «шифр»), ничего более говорить или показывать нельзя. Позволяется уточнить, куда падает ударение в загаданном слове. Шифр состоит из одного слова и одного числа. Например, руководитель хочет намекнуть на два кодовых слова, написанные на картах стола, – СЛОН и ЛЕВ – и говорит: «африка - 2». Шифр должен относиться к смыслу кодовых имён. Нельзя использовать слова с одинаковыми окончаниями, суффиксами и приставками, если они не связаны по смыслу («человечек» и «грибочек» связаны, они оба описывают маленькие предметы, «воскресение» и «мнение» не связаны). Нельзя использовать шифры с созвучными корнями, если они не связаны по смыслу («порт» нельзя использовать для слова СПОРТ, но «ребёнок» можно использовать для слова ЖЕРЕБЁНОК). Нельзя говорить об их первых буквах или о геометрическом расположении этих карт в таблице. Нельзя связывать слова ЛУК, ЛЁН и ЛЕВ шифрами «л - 3» или «три - 3». Буквы и числа допустимы, если они касаются смысла кодовых имён, например, «восемь - 2» – о словах ПАУК и ЧИСЛО. Число в шифре нельзя использовать в качестве шифра: «цитрусовые - 8» недопустимо для слов ЛИМОН и ОСЬМИНОГ. В качестве шифра нельзя использовать слово однокоренное с присутствующими среди неразгаданных кодовых имён. В шифре запрещено использовать несуществующие слова, делать намеки в виде нарочных ошибок или изменений регистра букв, например, для слов ЛУНА и БАСНЯ недопустимо «АПОЛЛОг - 2». Если используется шифр не на русском языке, он не должен иметь однокоренных прямых переводов со словами на столе. Аббревиатуры использовать можно, но к их составляющим применяются те же правила, что к обычным подсказкам (нельзя загадывать СССР, если на столе есть карточка со словом «союз»). Запрещено использовать не существующие слова, если такие слова вместе с загаданным и, возможно, дополнительными буквами образуют существующее слово. Например, нельзя использовать часть слова, пишущегося через дефис, для объяснения другой части этого же слова. В качестве чисел можно использовать — 0-9; при этом команда может называть любое количество слов. Руководителю команды допустимо произнести вслух шифр, в том числе и по просьбам игроков. Наказание за неправильный шифр: Если руководитель команды дал шифр с нарушением правил, ход его команды немедленно заканчивается, и руководитель команды соперников открывает одно слово своей команды, прежде чем давать шифр.",
+        "ID" : 9,
+        "NAME" : "Codenames",
+        "URL" : "https://meme-police.ru/bg"
+    },
+    {
+        "CATEGORIES" : {
+            "AGE" : 6,
+            "DIFFICULTY" : null,
+            "EVENT" : [
+                "party"
+            ],
+            "GAME_TYPE" : {
+                "OFFLINE" : [
+                    "true"
+                ],
+                "ONLINE" : [
+                    "PC",
+                    "android",
+                    "ios"
+                ]
+            },
+            "PERSONS_COUNT" : null,
+            "TIME" : null
+        },
+        "DESC" : "Рип-офф классической настолки «Цитадели». Для игры нужно 2-8 человек. Каждый игрок получает по 2 золотые монеты и 4 карты кварталов. Золото тратится на многие цели, но в основном оно нужно для строительства. Каждый раунд состоит из двух частей:Сначала первый игрок (обладатель короны) берёт колоду персонажей, перемешивает её и сбрасывает определённое количество карт в открытую одну взакрытую. Теперь он должен выбрать одного персонажа среди оставшихся и передать колоду дальше по часовой стрелке. Все игроки выбирают себе по картеТеперь Король, то есть первый игрок, по очереди вызывает персонажей на службу, называя их номера. Если у игрока есть персонаж с этим номером, он раскрывает карту и наступает его ход. Например, под первым номером может скрываться Убийца, и игрок выбравший его, получает ход. В свой ход игроки выбирают, какой ресурс получить: либо 2 монеты, либо одну карту кварталов на выбор. Также в свой ход можно применять способность своего персонажа Игра заканчивается в тот момент, когда кто-либо из игроков достраивает последний седьмой квартал. Игроки делают по последнему ходу и происходит финальный подсчёт очков, то есть подсчёт общей стоимости всех ваших карт кварталов, а так же различных бонусов. Игрок, набравший наибольшее количество очков, побеждает.",
+        "ID" : 10,
+        "NAME" : "Цитадели",
+        "URL" : "https://meme-police.ru/bg"
+    },
+    {
+        "CATEGORIES" : {
+            "AGE" : 6,
+            "DIFFICULTY" : null,
+            "EVENT" : [
+                "party"
+            ],
+            "GAME_TYPE" : {
+                "OFFLINE" : [
+                    "true"
+                ],
+                "ONLINE" : [
+                    "PC",
+                    "android",
+                    "ios"
+                ]
+            },
+            "PERSONS_COUNT" : null,
+            "TIME" : null
+        },
+        "DESC" : "Рип-офф настольной игры «Находка для шпиона»",
+        "ID" : 11,
+        "NAME" : "Шпион",
+        "URL" : "https://meme-police.ru/bg"
+    },
+    {
+        "CATEGORIES" : {
+            "AGE" : 6,
+            "DIFFICULTY" : null,
+            "EVENT" : [
+                "party"
+            ],
+            "GAME_TYPE" : {
+                "OFFLINE" : [
+                    "true"
+                ],
+                "ONLINE" : [
+                    "PC",
+                    "android",
+                    "ios"
+                ]
+            },
+            "PERSONS_COUNT" : null,
+            "TIME" : null
+        },
+        "DESC" : "Игра с Коммунистами (от 9 игроков) В режиме на три команды в игру вводится новая сторона — Коммунисты. Они играют отдельной командой и знают друг друга.Для победы за коммуниста нужно:- либо принять 4 коммунистических закона (для них появляется отдельный планшет, а всего таких карт в колоде 6 штук)- либо собственноручно убить Гитлера (если это сделает либерал, то победят либералы).При принятии предпоследнего коммунистического закона, активируется функция «Вето», так же как при принятии предпоследнего фашистского.",
+        "ID" : 12,
+        "NAME" : "Secret Hitler",
+        "URL" : "https://meme-police.ru/bg"
+    },
+    {
+        "CATEGORIES" : {
+            "AGE" : 12,
+            "DIFFICULTY" : null,
+            "EVENT" : [
+                "party"
+            ],
+            "GAME_TYPE" : {
+                "OFFLINE" : [
+                    "true"
+                ],
+                "ONLINE" : null
+            },
+            "PERSONS_COUNT" : null,
+            "TIME" : null
+        },
+        "DESC" : "Настольная игра Тик Так Бумм — это заряд драйва и позитива для детей от 12 лет и взрослых. Популярная классическая игра, где надо быть не только эрудированным, но и быстрым. Задача игроков — за считанные секунды придумать слово, содержащее тот или иной набор букв. При этом по кругу передается тикающая «бомбочка-таймер». Если вы не успели ответить и услышали сигнал окончания таймера \"Бумм!\", держа его в руках, придется забрать штрафную карточку себе. Интрига в том, что вы не знаете, когда произойдёт взрыв: через 10 секунд или только на пятом круге. Остается расчитывать на свою реакцию, память, смекалку, и удачу! Побеждает тот игрок, у которого по итогу раундов будет меньше штрафных карточек. Игра очень веселая и интересная, подойдет как для игры в кругу семьи, так и для большой компании. Правила предельно просты и на подготовку уйдет всего пара минут. Отличная альтернатива \"Монополии\" и \"Крокодилу. Идеальна в качестве подарка. Для бомбочки понадобятся 2 батарейки ААА.",
+        "ID" : 13,
+        "NAME" : "Тик Так Бумм",
+        "URL" : "https://www.ozon.ru/product/piatnik-nastolnaya-igra-tik-tak-bumm-798092-171155552/?advert=bXWRyFd2jChvaV67LTlVQyaKcZX-neB-eY_HTrng8xyWFYWpNZuxFHnbtmX38Ba54gmxNYPmJ6WbQ2G_015abisOqIfO648jpsAgMi6MfjWXvt4Sqm59i7ElNynjEi_gebLQsxQkToCv0RThwmZMIMXUCCiHpj6Aep_3UY8Ux0Iiaw2R9SG7gIfDmEHnnb_E3_Qnx-v-z1H3DvM5Pzn7SpYCsqfcoX7j_LD8PHBv8xUwd1FICxA968UmURhmF9MprYksgC8mQWI1QbKK8KyxRDwV-MxNavozdV5JMhaXxi5ScbuVDywWi_BG5yWLCvPQsNZogC2CEZax6ijsP9GmORpGrsbR3ZgMnGX5efRJcARlC_XkwhOtR9YtLuBwfSVqm9DpMbpQGtC4-zenmiOUVIKmuj6_Fonk3SW1-M087FLQr7XIk5TjE5WTVJc_T6QwOUZWrM9CL5S2us8J8vqh_DjbnbCghfJiVRP92vj8HD3q-JbpZtpMihEniCYoC2rww6cP9BKmfZrwyQyXGkXPRy-aCuPvCwEn7nyJJs_wWWsu1LQuTWOnTEN0jNwPvoL2KTZk-GXT6KbVhaTfUcRSSvRB8XROOFiKH9Ym9bb9YysD2xDObcgg27OXrgPM9-bLoIz1hTXAq_fj8OWCCvrh1yzQdVSS8fU149II14iggKHF3N0oUqUqsKXa4boGD5ZiiBeY_Q1vGBabyr5ib_I5dw&keywords=%D0%BD%D0%B0%D1%81%D1%82%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F+%D0%B8%D0%B3%D1%80%D0%B0&sh=rkEx2l62jQ"
+    },
+    {
+        "CATEGORIES" : {
+            "AGE" : 6,
+            "DIFFICULTY" : null,
+            "EVENT" : [
+                "alone",
+                "road",
+                "child"
+            ],
+            "GAME_TYPE" : {
+                "OFFLINE" : [
+                    "true"
+                ],
+                "ONLINE" : null
+            },
+            "PERSONS_COUNT" : null,
+            "TIME" : null
+        },
+        "DESC" : "НАСТОЛЬНАЯ ИГРА НА РАВНОВЕСИЕ У каждого игрока есть одинаковое количество стульчиков. Ваша задача – избавиться от своих первым.",
+        "ID" : 14,
+        "NAME" : "игра на равновесие Лас Играс \"На 4 ногах\", 18 стульев",
+        "URL" : "https://www.ozon.ru/product/nastolnaya-igra-na-ravnovesie-las-igras-na-4-nogah-18-stulev-169890630/?asb=gFOPSgz1WPWdYh8JAmeDby8tF4qV1bWv9UX%252BQYrGjtDsxxgOP0AbuXb439ry9QdJ&asb2=2cC8UqXS_xgZxS1ql0zRwfTO8q8P9Ac_GD8yNnttYoObEKWRl3I4GFOkvNLm5d5p8ctEywD6b7rf_LtUs3Zx32OyPgySI0FRSTqkldSaR_aq6WpqKuZoJ7CXQ1VfZi6giCpTaYNkywHdYkK0wHk5cA&sh=rkEx2sYoow"
+    },
+    {
+        "CATEGORIES" : {
+            "AGE" : 16,
+            "DIFFICULTY" : null,
+            "EVENT" : [
+                "party"
+            ],
+            "GAME_TYPE" : {
+                "OFFLINE" : [
+                    "true"
+                ],
+                "ONLINE" : null
+            },
+            "PERSONS_COUNT" : null,
+            "TIME" : null
+        },
+        "DESC" : "Универсальное решение для большой компании любителей нуарных детективов! Перед вами особый выпуск популярной психологической игры Мафия от издательства GaGa Games. Мрачные, но стильные иллюстрации зададут тон вашей партии, и правдоподобно сыграть доставшегося вам персонажа не составит труда. Ход игры неизменен: ночами преступники творят беспредел и стремятся сократить число мирных жителей до критически малого, днем законопослушные граждане пытаются навести в городе порядок своими силами и вычислить всех членов мафиозного клана. Опытный ведущий с бурной фантазией контролирует процесс, но в комплект не входит. Все роли скрыты, и чтобы узнать, кто есть кто, придется прислушаться к интуиции, прибегнуть к дедукции и теории лжи. Будьте внимательны к мелочам, активно отстаивайте свою точку зрения и получайте удовольствие от общения!",
+        "ID" : 15,
+        "NAME" : "Мафия. Город Засыпает",
+        "URL" : "https://www.ozon.ru/product/mafiya-gorod-zasypaet-148541805/?asb=QH7TCSegQcXVHbYHBJYM7LKhtdxwG%252BVRoAPCitoFqlhnpmUN%252FFssSI0vlK6XPITO&asb2=Xy3Lfwyj0JFNfKL63aHD310HF0Wg_EMUS2Yzk15F-oa12uWlDnOx2OdvI2HNr0ZmkJMsfm0OKKRsuVZYm4bXIosw843ahVEZrJt0l2JPF9ha6oDuKIyMRBscQAL7YmvjK9Ks6fnQ7Zbn3nVyMCVt4g&sh=rkEx2tHLPg"
     }
 ]
