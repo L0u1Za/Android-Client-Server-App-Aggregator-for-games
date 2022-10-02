@@ -41,14 +41,14 @@ if __name__ == '__main__':
             else:
                 id = 1
             ctg = available_categories.copy()
-            ctg['EVENT'] = ['party']
-            ctg['AGE'] = 16
+            ctg['EVENT'] = ['party', 'family', 'child']
+            ctg['AGE'] = 6
             ctg['GAME_TYPE']['ONLINE']
             ctg['GAME_TYPE']['OFFLINE'] = ['true']
 
-            name = f'Мафия. Город Засыпает'
-            url = f'https://www.ozon.ru/product/mafiya-gorod-zasypaet-148541805/?asb=QH7TCSegQcXVHbYHBJYM7LKhtdxwG%252BVRoAPCitoFqlhnpmUN%252FFssSI0vlK6XPITO&asb2=Xy3Lfwyj0JFNfKL63aHD310HF0Wg_EMUS2Yzk15F-oa12uWlDnOx2OdvI2HNr0ZmkJMsfm0OKKRsuVZYm4bXIosw843ahVEZrJt0l2JPF9ha6oDuKIyMRBscQAL7YmvjK9Ks6fnQ7Zbn3nVyMCVt4g&sh=rkEx2tHLPg'
-            desc = f'Универсальное решение для большой компании любителей нуарных детективов! Перед вами особый выпуск популярной психологической игры Мафия от издательства GaGa Games. Мрачные, но стильные иллюстрации зададут тон вашей партии, и правдоподобно сыграть доставшегося вам персонажа не составит труда. Ход игры неизменен: ночами преступники творят беспредел и стремятся сократить число мирных жителей до критически малого, днем законопослушные граждане пытаются навести в городе порядок своими силами и вычислить всех членов мафиозного клана. Опытный ведущий с бурной фантазией контролирует процесс, но в комплект не входит. Все роли скрыты, и чтобы узнать, кто есть кто, придется прислушаться к интуиции, прибегнуть к дедукции и теории лжи. Будьте внимательны к мелочам, активно отстаивайте свою точку зрения и получайте удовольствие от общения!'
+            name = f'Дабл Слинг'
+            url = f'https://www.ozon.ru/product/derevyannaya-nastolnaya-igra-dlya-razvitiya-lovkosti-dabl-sling-s-tsvetnymi-fishkami-double-sling-172894782/?asb=kmQ5CUWCAt5V5CR9Z38YwjAM327iUzFlxqUcDvvSwv2YsQWzSpBh1n2SO2tOSDCI&asb2=wYQpSqgO6xfrE55fy8ZWozcODghhwnfzFzulVT9BqraFI9YDQYa5et9vVbYDqW6dOzbvft7GZyLRibmM7b_cAOwNhyLKbPoQyC2DQ8Zhsbv-Q01kJWFkg4Gwabc4971OM33iXGMQ21O4TViU2jG9CA&sh=rkEx2jfshg'
+            desc = f'Сразитесь с соперником в увлекательной активной настольной игре «Дабл Cлинг»!Состав игры:игровое поле (43,3 х 25 см, высота – 33 мм)деревянные фишки – 10 шт. (диаметр – 29 мм., высота – 12 мм)Цель игры – первым выбить все фишки своего цвета на сторону противника. Для этого необходимо натянуть фишку на резинку, прицелиться и отправить её прямо через центральные ворота на половину противника! Тот, кто сделает это быстрее, становится победителем игры.'
             app = AddApp(name, url, desc, ctg, id)
             data.append(app.write())
         except:
